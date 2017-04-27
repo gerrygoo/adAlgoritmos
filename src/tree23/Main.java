@@ -114,6 +114,15 @@ public class Main {
             }
         }else if(inn.compareTo("print") == 0){
             System.out.println(dict);
+        }else if(inn.compareTo("man") == 0){
+            System.out.println(
+                "get\n"+
+            "\tImprime el valor almacenado en la llave dada, de no existir imprime null.\n"+
+        "put\n"+
+            "\tAsigna a la llave el valor dado. Si la llave no existe esta es creada.\n"+
+        "remove\n"+
+            "\tRemueve el par llave, valor dado.\n"+
+        "print\n"+"\tMuestra todos los pares llave-valor. Los pares son hojas del arbol 2-3. La profundidad de los pares está representada por el número de comas entre ellos.");
         }
     }
 
