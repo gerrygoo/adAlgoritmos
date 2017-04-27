@@ -1,0 +1,88 @@
+INSTITUTO TECNOLÓGICO Y DE ESTUDIOS SUPERIORES DE MONTERREY
+					CAMPUS ESTADO DE MEXICO
+
+				ANÁLISIS Y DISEÑO DE ALGORITMOS
+				PROFESORA: MARICELA QUINTANA
+
+				DICCIONARIO CON ÁRBOL 2-3
+
+				GERARDO GALVÁN OLVERA 1371872
+				ANDRÉS DE LAGO GÓMEZ 1371
+
+						27/04/17
+
+
+
+------Problema:
+	El problema que escogimos fue el de hacer la estructura de datos 'diccionario'
+	o 'mapa' usando un arbol 2-3.
+
+------Algoritmo:
+	Para resolver el problema implementamos los algoritmos de inserción, elimina y pertenece (o get)
+	para un arbol 2-3.
+
+------"Empatar cada parte del código con el algoritmo"
+	Inserta: línea 20
+	Elimina: línea 38
+	Pertenece: línea 10
+
+------Uso, entradas, salidas
+	Para compilar el proyecto se debe de usar el compilador de java desde el
+	directorio principal del proyecto:
+		$ javac src/tree23/*.java
+
+	Para ejecutar el programa se debe de correr la clase Main en usando java.
+	desde el directorio principal del proyecto:
+		$ java -cp ./src tree23.Main
+
+	Para su uso, se debe indicar el tipo tanto de llave como de valor siguiendo
+	el programa. Hecho esto existen 4 comandos disponibles:
+
+		get
+			Imprime el valor almacenado en la llave dada, de no existir imprime null.
+		put
+			Asigna a la llave el valor dado. Si la llave no existe esta es creada.
+		remove
+			Remueve el par llave, valor dado.
+		print
+			Muestra todos los pares llave-valor. Los pares son hojas del arbol 2-3. La profundidad
+			de los pares está representada por el número de comas entre ellos.
+
+
+
+------Ejemplo de corrida:
+Proyecto de analisis y diseño de algoritmos: Diccionario con arbol 2-3
+
+Tipo de llave: s string / n numero
+>s
+Tipo de valor: s string / n numero
+>s
+-1 para terminar
+>put
+key>lucia
+value>avila
+>gerardo
+>anfjnjka
+>put
+key>gerardo
+value>galvan
+>put
+key>andres
+value>de Lago
+>put
+key>kevin
+value>woo
+>put
+key>sergio
+value>hernandez
+>print
+andres: de Lago, gerardo: galvan, , kevin: woo, lucia: avila, sergio: hernandez, ,
+>get
+key>kaka
+null
+>put
+key>santiago
+value>nakakaka
+>print
+andres: de Lago, gerardo: galvan, , kevin: woo, lucia: avila, , santiago: nakakaka, sergio: hernandez, ,
+>-1
