@@ -53,9 +53,9 @@ INSTITUTO TECNOLÓGICO Y DE ESTUDIOS SUPERIORES DE MONTERREY
 ------Ejemplo de corrida:
 Proyecto de analisis y diseño de algoritmos: Diccionario con arbol 2-3
 
-Tipo de llave: s string / n numero
+Tipo de llave: s <string> / n <numero>
 >s
-Tipo de valor: s string / n numero
+Tipo de valor: s <string> / n <numero>
 >s
 -1 para terminar
 >put

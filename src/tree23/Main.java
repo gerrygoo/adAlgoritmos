@@ -41,7 +41,7 @@ public class Main {
 
     private static void init(){
         while(true){
-            System.out.println("Tipo de llave: s string / n numero");
+            System.out.println("Tipo de llave: s <string> / n <numero>");
             System.out.print(">");
             k = s.nextLine();
             if(k.compareTo("s") == 0 || k.compareTo("n") == 0){
@@ -51,7 +51,7 @@ public class Main {
             }
         }
         while(true){
-            System.out.println("Tipo de valor: s string / n numero");
+            System.out.println("Tipo de valor: s <string> / n <numero>");
             System.out.print(">");
             v = s.nextLine();
             if(k.compareTo("s") == 0 || k.compareTo("n") == 0){
